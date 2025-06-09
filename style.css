@@ -20,14 +20,14 @@ html, body {
   main {
     min-height: 100dvh;
   }
-  .big-cta::before,
-.big-cta::after,
-.hero::before,
-.hero::after,
-.stats::before,
-.stats::after {
-  pointer-events: none;
-}
+  body::before,
+  body::after,
+  html::before,
+  html::after,
+  *:before,
+  *:after {
+    pointer-events: none !important;
+  }
   section, div, .container {
     max-width: 100%;
   }
@@ -339,13 +339,13 @@ grid-template-columns: repeat(2, 1fr); /* 2 columns on medium+ screens */
     margin-bottom: 5px;
   }
   
-  .case-studies {
+  /* .case-studies {
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
     justify-content: center;
     text-align: left;
-  }
+  } */
   
   .case-study {
     background: white;
@@ -404,10 +404,10 @@ grid-template-columns: repeat(2, 1fr); /* 2 columns on medium+ screens */
   
   /* Responsive */
   @media (max-width: 768px) {
-    .case-studies {
+    /* .case-studies {
       flex-direction: column;
       align-items: center;
-    }
+    } */
   
     .case-study {
       max-width: 100%;
