@@ -37,7 +37,7 @@ nav ul{display:flex;list-style:none;gap:2rem;align-items:center;}
 nav li a{font-weight:500;}
 
 /* === HERO === */
-.hero{padding:8rem 0 7rem;text-align:center;position:relative;overflow:hidden;}
+.hero{padding:4rem 0 3rem;text-align:center;position:relative;overflow:hidden;}
 .hero h1{font-size:clamp(1.9rem,5vw,3.5rem);font-weight:800;margin-bottom:1rem;}
 .hero p{max-width:620px;margin:0 auto 2rem;color:var(--fg-muted);font-size:1.1rem;}
 .hero {
@@ -503,7 +503,8 @@ grid-template-columns: repeat(2, 1fr); /* 2 columns on medium+ screens */
   @media (max-width: 1024px) {
     .case-studies img {
       max-width: 48%;
-      flex-basis: 48%;
+      /* flex-basis: 48%; */
+      height: auto;
     }
   }
   
@@ -517,6 +518,7 @@ grid-template-columns: repeat(2, 1fr); /* 2 columns on medium+ screens */
       max-width: 100%;
       flex-basis: 100%;
       min-width: auto;
+      height: auto;
     }
   
     .potential {
