@@ -11,6 +11,8 @@ html, body {
     margin: 0;
     padding: 0;
     overflow-x: hidden;
+    overflow-y: auto; /* Ensure vertical scrolling */
+    -webkit-overflow-scrolling: touch;
     height: auto;
     min-height: 100%;
     scroll-behavior: smooth;
@@ -491,18 +493,14 @@ grid-template-columns: repeat(2, 1fr); /* 2 columns on medium+ screens */
   .case-studies img {
     flex: 1 1 45%;  /* flex-grow, flex-shrink, basis: grow and shrink, basis 45% */
     max-width: 45%;
-    min-width: 280px; /* prevents images from getting too small */
+    min-width: 240px; /* prevents images from getting too small */
     height: auto;
     border-radius: 8px;
-    object-fit: contain;
+    object-fit: fill    ;
     box-shadow: 0 4px 12px rgba(0,0,0,0.6);
-    transition: transform 0.3s ease;
   }
   
-  .case-studies img:hover {
-    transform: scale(1.05);
-  }
-  
+
   /* Responsive breakpoints */
   @media (max-width: 1024px) {
     .case-studies img {
