@@ -8,7 +8,13 @@
   --max-w:1100px;
 }
 html, body {
+    width: 100%;
+    max-width: 100%;
     overflow-x: hidden;
+  }
+  
+  section, div, .container {
+    max-width: 100%;
   }
 html{scroll-behavior:smooth}
 body{font-family:"Inter",sans-serif;background:var(--bg);color:var(--fg);line-height:1.6;}
