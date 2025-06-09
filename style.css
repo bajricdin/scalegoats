@@ -10,11 +10,12 @@
 html, body {
     margin: 0;
     padding: 0;
-    min-height: 100vh;
+    min-height: 100%;
   }
   html, body {
     overflow-x: hidden; /* BACK, but only after you fix the cause */
     overflow-y: auto;
+    height: 100%;
   }
   main {
     min-height: 100dvh;
@@ -127,7 +128,7 @@ nav li a{font-weight:500;}
         pointer-events: none;
         max-width: 100%;
         }
-    
+/*     
   .results-section::after, .features::after{
         content: "";
         position: absolute;
@@ -143,7 +144,7 @@ nav li a{font-weight:500;}
         pointer-events: none;
         max-width: 100%;
         
-  }
+  } */
   .big-cta {
     position: relative;
     z-index: 1;
@@ -486,23 +487,21 @@ grid-template-columns: repeat(2, 1fr); /* 2 columns on medium+ screens */
   /* CASE STUDIES - Flex container for images */
   .case-studies {
     display: flex;
-    gap: 20px; /* space between images */
+    gap: 20px;
     justify-content: center;
-    flex-wrap: wrap; /* wrap to next line on small screens */
+    flex-wrap: wrap;
     margin-bottom: 50px;
     text-align: center;
   }
   
-  /* Each image inside case-studies */
   .case-studies img {
-    width: 100%;
+    max-width: 500px; /* or 45% for two images per row */
+    width: auto;      /* do not force full width */
     height: auto;
-    max-width: 100%;
     display: block;
     object-fit: cover;
     border-radius: 8px;
     box-shadow: 0 4px 12px rgba(0,0,0,0.6);
-    margin: 0 auto;
   }
   img{
     height: auto;
