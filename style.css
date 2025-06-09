@@ -496,7 +496,7 @@ grid-template-columns: repeat(2, 1fr); /* 2 columns on medium+ screens */
     min-width: 240px; /* prevents images from getting too small */
     height: auto;
     border-radius: 8px;
-    object-fit: cover;
+    object-fit: contain;
     box-shadow: 0 4px 12px rgba(0,0,0,0.6);
   }
   img{
