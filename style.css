@@ -11,14 +11,21 @@ html, body {
     margin: 0;
     padding: 0;
     overflow-x: hidden;
-    overflow-y: auto;
     height: auto;
     min-height: 100%;
+    scroll-behavior: smooth;
   }
   main {
-    min-height: 100vh;
+    min-height: 100dvh;
   }
-  
+  .big-cta::before,
+.big-cta::after,
+.hero::before,
+.hero::after,
+.stats::before,
+.stats::after {
+  pointer-events: none;
+}
   section, div, .container {
     max-width: 100%;
   }
