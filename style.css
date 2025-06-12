@@ -188,7 +188,7 @@ nav li a{font-weight:500;}
 .feature-card p{color:var(--fg-muted);font-size:0.95rem;}
 
 /* === GROWTH BANNER === */
-.growth{padding:0 0 4rem 0;background:#1c1917;text-align:center;}
+.growth{padding:0 0 0rem 0;background:#1c1917;text-align:center;}
 .growth h2{font-size:clamp(1.6rem,4.5vw,2.6rem);font-weight:700;margin-bottom:.8rem;}
 .growth p{color:var(--fg-muted);max-width:650px;margin-inline:auto;margin-bottom:2rem;}
 
@@ -224,7 +224,7 @@ footer a{color:var(--accent);}
   .nav-toggle{display:block;}
   .nav{justify-content: center;}
    nav ul{position:absolute;top:80px;right:5%;background:#101010;border:1px solid #1f1f1f;border-radius:var(--radius);flex-direction:column;padding:1.5rem 2rem;gap:1.3rem;transform:translateY(-10px);opacity:0;pointer-events:none;transition:all .25s ease;} 
-}
+  }
 
 .hero .container {
 max-width: 1200px;
@@ -540,6 +540,9 @@ grid-template-columns: repeat(2, 1fr); /* 2 columns on medium+ screens */
       flex-direction: column;
       gap: 30px;
     }
+    .results-section{padding: 5rem 1.5rem 2rem 1.5rem;}
+    .stats{padding: 4rem 0;}
+    .big-cta{padding: 4rem 0;}
   
     .case-studies img {
       flex: none;
