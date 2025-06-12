@@ -41,14 +41,16 @@ header{padding:1.2rem 0;}
 .nav{display:flex;align-items:center;justify-content:space-between;}
 .logo{font-weight:800;font-size:1.85rem;text-transform:lowercase;letter-spacing:-.5px;}
 .logo span{color:var(--accent);}
+.hero span{color:var(--accent);}
 .nav-toggle{display:none;background:none;border:none;font-size:1.8rem;color:var(--fg);}
 nav ul{display:flex;list-style:none;gap:2rem;align-items:center;}
 nav li a{font-weight:500;}
 
 /* === HERO === */
-.hero{padding:4rem 0 3rem;text-align:center;position:relative;overflow:hidden;}
-.hero h1{font-size:clamp(1.9rem,5vw,3.5rem);font-weight:800;margin-bottom:1rem;}
-.hero p{max-width:620px;margin:0 auto 2rem;color:var(--fg-muted);font-size:1.1rem;}
+.hero{padding:7rem 0 7rem;text-align:center;position:relative;overflow:hidden;}
+.hero h2{font-size:clamp(1.9rem,5vw,3.5rem);font-weight:800;margin-bottom:1rem;text-align: left;}
+.hero h1{font-size:clamp(1.9rem,5vw,3.5rem);font-weight:800;margin-bottom:1rem;text-align: left;}
+.hero p{max-width:620px;margin:0 auto 2rem;color:var(--fg-muted);font-size:1.1rem;text-align: left;}
 .hero {
   position: relative;
   z-index: 1;
@@ -218,10 +220,10 @@ footer a{color:var(--accent);}
 
 /* === MOBILE NAV === */
 @media(max-width:720px){
+  .hero{padding: 4rem 0 3rem;}
   .nav-toggle{display:block;}
   .nav{justify-content: center;}
-   nav ul{position:absolute;top:80px;right:5%;background:#101010;border:1px solid #1f1f1f;border-radius:var(--radius);flex-direction:column;padding:1.5rem 2rem;gap:1.3rem;transform:translateY(-10px);opacity:0;pointer-events:none;transition:all .25s ease;} */
-  .hero{padding: 4rem 0 3rem;}
+   nav ul{position:absolute;top:80px;right:5%;background:#101010;border:1px solid #1f1f1f;border-radius:var(--radius);flex-direction:column;padding:1.5rem 2rem;gap:1.3rem;transform:translateY(-10px);opacity:0;pointer-events:none;transition:all .25s ease;} 
 }
 
 .hero .container {
@@ -529,7 +531,6 @@ grid-template-columns: repeat(2, 1fr); /* 2 columns on medium+ screens */
   
     .potential {
       max-width: 100%;
-      padding: 0 1rem;
     }
   }
 
